@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IIIF标准图像实践</title>
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+  <div class="main_container">
+    <form id="file_upload" action="/uplord" method="post" enctype="multipart/form-data">
+      <div class="left-container">
+        <div class="title"><span>IIIF标准图像实践</span></div>
+        <div class="input-container">
+          <div class="file-style">
+            <p style="color: white; height:0px;line-height:45px; width:100px;"><input type="file" id="file"
+                name="upload_image" accept="image/gif, image/jpeg, image/png, image/jpg">选择图片</p>
+          </div>
+          <button id="photo_submit" type="button" class="photo_face btn btn-primary"
+            style="margin-top: 20px;">上传图片</button>
+        </div>
+        <div class="message-container">
+          <span><a href="/iiif/make_manifest" style="color: white;">制作清单</a></span>
+        </div>
+      </div>
+      <div class="right-container">
+        <p>
+        <div class="regist-container">
+          <label>图片预览：</label>
+        </div>
+        <a onclick="save()"><img id="image-preview"></a>
+        </p>
+        <p id="info" style="font-size: 5px"></p>
+      </div>
+    </form>
+  </div>
+  <footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+      integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/static/js/uplord.js"></script>
+  </footer>
+
+</body>
+
+</html>

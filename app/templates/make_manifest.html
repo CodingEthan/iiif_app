@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>制作清单</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style_manifest.css">
+</head>
+
+<body>
+    <div class="main_container" style="padding: 25px;">
+        <form class="manifest_form" action="/iiif/make_manifest" method="post" style="text-align: center;">
+            <!-- <div class="title"><span>Identifier</span></div> -->
+            <input type="text" name="identifier" placeholder="Identifier" />
+            <!-- <div class="title"><span>IIIF_url</span></div> -->
+            <input type="text" name="iiif_url"  placeholder="IIIF_url" />
+            <label><input type="radio" name="typeface" value="chi_sim" style="width: 180px;">横板/竖版简中</label>
+            <label><input type="radio" name="typeface" value="chi_tra" style="width: 180px;">横板繁体</label>
+            <label><input type="checkbox" name="ChatGPT" value="true" style="width: 180px;">ChatGPT分析</label>
+            <input type="submit" class="photo_face btn btn-primary" />
+            <input type="reset" class="photo_face btn btn-primary" style="margin-top: 5px;" />
+        </form>
+    </div>
+    <footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+            integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+            crossorigin="anonymous"></script>
+    </footer>
+</body>
+
+</html>

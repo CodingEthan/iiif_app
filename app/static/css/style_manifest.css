@@ -1,0 +1,70 @@
+.main_container {
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 10%;
+	border-radius: 15px;
+	box-shadow: 0 10px 50px 0px rbg(59, 45, 159);
+	background-color: rgb(95, 76, 194);
+}
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-image: linear-gradient(to bottom right, rgb(114, 135, 254), rgb(130, 88, 186));
+}
+
+.title {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 200;
+}
+
+.title span {
+	border-bottom: 3px solid rgb(237, 221, 22);
+}
+
+input {
+	border: 0;
+	background: none;
+	outline: none;
+	color: #fff;
+	margin: 20px 0;
+	display: block;
+	width: 100%;
+	padding: 5px 0;
+	transition: .2s;
+	border-bottom: 1px solid rgb(199, 191, 219);
+}
+
+input:hover {
+	border-bottom-color: #fff;
+}
+
+.manifest_form input[type="text"] {
+	background: none;
+	width: 450px;
+	border: 2px solid #3498db;
+	border-radius: 25px;
+	font-size: 16px;
+	margin: 10px auto;
+	padding: 14px 10px;
+	text-align: center;
+	outline: none;
+	color: white;
+	/* CSS3 过渡效果，设置时长 */
+	transition: 0.25s;
+}
+
+.manifest_form input[type="text"]:focus {
+	width: 560px;
+	border-color: #2ecc71;
+}

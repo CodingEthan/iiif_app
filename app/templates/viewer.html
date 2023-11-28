@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Mirador Viewer Demo</title>
+  <!-- Mirador CSS -->
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/mirador/dist/css/mirador.min.css">
+</head>
+
+<body>
+  <!-- Mirador Viewer -->
+  <div id="mirador-viewer"></div>
+
+  <!-- Mirador JS -->
+  <script type="text/javascript" src="https://unpkg.com/mirador/dist/mirador.min.js"></script>
+
+  <script type="text/javascript">
+    // Mirador configuration
+    var miradorConfig = {
+      id: "mirador-viewer",
+      data: [
+        {
+          manifestUri: "https://example.com/manifest.json",
+          location: "https://iiif.io/api/image/2.1/example.tif/full/400,/0/default.jpg",
+          provider: "Example Provider",
+        },
+      ],
+    };
+
+    // Initialize Mirador
+    var mirador = Mirador.viewer(miradorConfig);
+  </script>
+</body>
+
+</html>

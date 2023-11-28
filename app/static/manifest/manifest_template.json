@@ -1,0 +1,44 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "http://localhost:8000/iiif/test01/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "IIIF大创实践",
+    "description": "",
+    "label": "大创IIIF服务器实践",
+    "metadata": [
+        {
+            "label": "Date",
+            "value": "1000"
+        }
+    ],
+    "sequences": [
+        {
+            "@id": "https://iiif/manifests/sequence/test",
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://iiif/manifests/canvas/test",
+                    "@type": "sc:Canvas",
+                    "height": 2550,
+                    "images": [
+                        {
+                            "@id": "http://localhost:8000/R/full/full/0/default.jpg",
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://iiif/manifests/canvas/test",
+                            "resource": {
+                                "@id": "http://localhost:8000/R/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 2550,
+                                "width": 2087
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "width": 2087
+                }
+            ]
+        }
+    ]
+}
